@@ -1,0 +1,104 @@
+header{
+  font-family: Baskerville;
+  font-size: 100px;
+  letter-spacing: 4.4rem;
+}
+
+
+#main_image{
+  background-color: black;
+  width: 540px;
+  height: 540px;
+  margin-top: 5%;
+  margin-left: 18%;
+}
+
+#other_option1, #other_option2, #other_option3{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.3%;
+  background-color: black;
+  width:138px;
+  height:138px;
+  opacity:0.7;
+}
+
+#other_option1{
+  margin-top: -38%;
+}
+
+#disclaimer{
+  font-family: Arial;
+  font-size: 18px;
+  width: 40%;
+  margin-left: 18%;
+}
+
+
+#title{
+  position:absolute;
+  width: 35%;
+  margin-left: 60%;
+  margin-top:-40%;
+  padding: 10px;
+}
+
+#author{
+  position:absolute;
+  width: 20%;
+  margin-left: 60%;
+  margin-top:-35%;
+  padding: 10px;
+}
+
+#book_size, #book_pattern{
+  position:absolute;
+  margin-left: 68%;
+  margin-top: -30%;
+  padding: 5px;
+}
+
+#book_pattern{
+  margin-left: 80%
+}
+
+#payment_information{
+  position:relative;
+  border: 2px solid black;
+  width: 550px;
+  height: 300px;
+  margin-left: 60%;
+  margin-top:-25%;
+}
+
+#payment_divider{
+position:absolute;
+border: 0.5px solid grey;
+width: 95%;
+margin-left: 2%;
+}
+
+#checkout_button{
+  position:absolute;
+  background-color: rgba(85, 10, 34, 1);
+  color:white;
+  border: rgb(85, 10, 34);
+  font-size:20px;
+  height:20%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+#paypal_button{
+  position:absolute;
+  background-color: white;
+  color:rgb(85, 10, 34);
+  border-color:rgb(85, 10, 34);
+  font-size:20px;
+  height:20%;
+  width: 50%;
+  margin-top: 23%;
+  margin-left: 25%;
+
+}

@@ -1,0 +1,374 @@
+.black_background{
+position:relative;
+margin-left:-2%;
+margin-top:-1%;
+width: 1461px;
+height: 365px;
+background: #000000;
+}
+
+#quote{
+  position:absolute;
+  margin-top: 1%;
+  width:100%;
+}
+
+#beginning_quote{
+margin-left: 20%;
+margin-top: 8%;
+font-family: Baskerville;
+font-size: 48px;
+color: #995DBE;
+animation: animate;
+}
+
+#beginning_quote::first-letter{
+  font-size: 70px;
+}
+
+#ending_quote{
+margin-left: 50%;
+margin-top: -3%;
+font-family: Baskerville;
+font-size: 48px;
+color: #DDA5FE;
+}
+
+.fadein_1{
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+
+.fadein_2{
+  animation: fadeIn 4s forwards;
+  animation-delay: 1.5s;
+  opacity: 0%;
+}
+
+@keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+
+.intro_images{
+  display:flex;
+  justify-content: space-between;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+
+#nav_bar{
+  position: relative;
+  margin-top: 10%;
+  margin-left:-0.5rem;
+  width:1445px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: Baskerville;
+  font-size: 20px;
+  background-color:white;
+  height:13%;
+  position:sticky;
+  top:0;
+  z-index:3;
+}
+
+#about, #service, #faqs, #contact{
+  position: relative;
+  margin-top:0.9%;
+}
+
+#home_button{
+background-color:black;
+width:25px;
+height:10px;
+border-radius:50%;
+margin-top:20px;
+}
+
+.about_section{
+  position:relative;
+  text-align: center;
+  color:black;
+  margin-top: 10%;
+  font-family:Baskerville;
+  font-size: 30px;
+  line-height: 3rem;
+}
+
+#italic{
+  font-size: 50px;
+  margin-top: 5%;
+}
+#about_2{
+  margin-top: 5%;
+}
+
+.traditional_section{
+  background-color:rgba(36, 2, 56, 0.45);
+  width: 848px;
+  height: 524px;
+  margin-left: 21%;
+  margin-top:25%;
+}
+
+.ornamented_section{
+background-color: rgba(32, 6, 48, 0.73);
+width: 848px;
+height: 524px;
+margin-left: 21%;
+margin-top: 20%;
+}
+
+
+#traditional_image{
+ position: absolute;
+ margin-left:-5%;
+ margin-top:-5%;
+ border: 3px solid black;
+ padding: 0%;
+}
+
+#ornamented_image{
+  position:absolute;
+  width: 481px;
+  height: 392px;
+  margin-left: 30%;
+  margin-top: -5%;
+  padding: 0%;
+}
+
+#traditional_title{
+  font-size: 100px;
+  margin-right: -20%;
+  margin-top: -29%;
+  padding:10%;
+}
+
+#traditional_p{
+  position:relative;
+  font-family:Baskerville;
+  font-size: 25px;
+  float: right;
+  text-align: right;
+  margin-top: 15%;
+  line-height: 50px;
+}
+
+#ornamented_title1{
+  font-size: 100px;
+  margin-left: -20%;
+  margin-top: -15%;
+  color:black;
+  padding: 3%;
+}
+
+#plus{
+  font-size: 50px;
+  margin-left: 5%;
+  margin-top: -10%;
+}
+
+
+
+#ornamented_title2{
+  font-size: 100px;
+  margin-left: -12%;
+  margin-top:-6%;
+  padding: 3%;
+}
+
+
+
+#ornamented_p{
+  position:relative;
+  font-family:Baskerville;
+  color:white;
+  font-size: 25px;
+  float: left;
+  text-align: left;
+  line-height: 50px;
+  margin-top:8%;
+}
+
+#lorem_1{
+  margin-top: 12%;
+  margin-right: 3%;
+}
+
+#lorem_2{
+  color:white;
+  margin-top: -6%;
+  margin-left: 3%;
+}
+
+#custom_button{
+position:absolute;
+background-color: rgba(85, 10, 34, 1);
+width: 468.11px;
+height: 133px;
+margin-top: 10%;
+margin-left: 33%;
+border-radius: 15px;
+}
+
+#custom_p{
+  font-family:Baskerville;
+  color:white;
+  font-size: 40px;
+  margin-left: 31%;
+  margin-top:10%;
+}
+
+#review_section{
+  position: relative;
+}
+
+#quote_mark_1{
+ position:absolute;
+ z-index:0;
+ padding: -10%;
+ margin-left:38%;
+ margin-top:30%;
+ background-color:yellow;
+ 
+}
+
+#review_1{
+  margin-top: 40%;
+}
+
+#review_2{
+  margin-top:-5%;
+  margin-left: 62%; 
+  z-index:2;
+}
+
+#review_3{
+  margin-top:15%;
+  margin-left: 3%;
+}
+
+#review_4{
+  margin-top: 15%;
+  margin-left: 52%;
+}
+
+#review_1_p,#review_2_p,#review_3_p,#review_4_p{
+  position:absolute;
+  font-family: Baskerville;
+  font-size: 48px;
+  color:black;
+}
+
+#review_1_p{
+  width:50%;
+  text-align: center;
+  margin-left:25%;
+  margin-top:-30%;
+  z-index:1;
+}
+
+#review_2_p{
+  margin-left:55%;
+  margin-top:3%;
+}
+
+#review_3_p{
+  width:50%;
+  text-align: center;
+  margin-left:35%;
+  margin-top:-25%;
+}
+
+#review_4_p{
+margin-left: 43%;
+margin-top: 1%;
+}
+
+#contact_section{
+background-color: black;
+width: 1445px;
+height: 672px;
+margin-top: 20%;
+margin-left:-0.5rem;
+margin-bottom:-2%;
+}
+
+#contact_title{
+  font-family: Baskerville;
+  color:white;
+  font-size:40px;
+  position:absolute;
+  margin-top: 5%;
+  margin-left:45%;
+}
+
+#first_name_label, #last_name_label, #email_label{
+  color:white;
+  font-family: Baskerville; 
+}
+
+#first_name_input{
+  border-bottom: 2px solid white;
+  margin-left:5%;
+  margin-top:10%;
+  width: 30%;
+  padding:20px;
+}
+
+#last_name{
+  background-color: pink;
+  font-size:50px;
+  margin-left:40%;
+  margin-top:10%;
+  margin-bottom:-3%;
+  width:16%;
+}
+
+#last_name_input{
+  border-bottom: 2px solid white;
+  margin-left:57%;
+  margin-top:-30%;
+  width: 35%;
+  padding:20px;
+}
+
+#email_label{
+  margin-top:10%;
+}
+
+#email{
+  font-size:50px;
+  margin-left:10%;
+  margin-bottom:-13%;
+  width:5%;
+}
+
+#email_input{
+  background-color: black; 
+  border-bottom: 2px solid white;
+  margin-left:22%;
+  margin-top:8%;
+  width: 70%;
+  padding:20px;
+}
+
+
+
+
+textarea{
+  border:1px solid white;
+  background-color:black;
+  margin-top:1%; 
+  margin-left:5%;
+  height:25%;
+  padding:5%;
+  width:80%;
+}
