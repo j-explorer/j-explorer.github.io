@@ -1,0 +1,74 @@
+
+#contact_info_title, #delivery_address_title{
+  font-family: arial;
+  font-size: 20px;
+}
+
+#contact_information{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+#phone_number, #email{
+  padding: 10px;
+  width: 30%;
+}
+
+#phone_number{
+  margin-top:20px;
+}
+
+#delivery_address{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+#first_name, #last_name{
+  padding: 10px;
+  width: 20%;
+}
+
+#address{
+  display:flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px -1px;
+  width: 42.5%;
+}
+
+#town_city{
+  padding: 10px;
+  width: 20%;
+}
+
+#postcode{
+  padding: 10px;
+}
+
+#uk{
+  padding: 10px;
+  width: 6.3%
+}
+
+#continue_button{
+  position:absolute;
+  background-color: rgba(85, 10, 34, 1);
+  color:white;
+  border: rgb(85, 10, 34);
+  font-size:20px;
+  height:7%;
+  width: 15%;
+  margin-top: 6%;
+  margin-left: -38.5%;
+}
+
+#right_section{
+position:absolute;
+ background-color:#2b093f;
+ height:730px;
+ width:530px;
+ margin-left: 60%;
+ margin-top:-42%;
+}

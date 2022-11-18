@@ -6,18 +6,21 @@ header{
 
 
 #main_image{
-  background-color: black;
+  background-color: #2b093f;
   width: 540px;
   height: 540px;
   margin-top: 5%;
-  margin-left: 18%;
+  margin-left: 15%;
 }
 
-#other_option1, #other_option2, #other_option3{
+#main{
+  margin-top: 10%;
+}
+
+.optional_images{
   display: flex;
   flex-direction: column;
   margin-bottom: 4.3%;
-  background-color: black;
   width:138px;
   height:138px;
   opacity:0.7;
@@ -27,30 +30,37 @@ header{
   margin-top: -38%;
 }
 
-#disclaimer{
-  font-family: Arial;
-  font-size: 18px;
-  width: 40%;
-  margin-left: 18%;
-}
 
+
+#book_info{
+  position:relative;
+}
 
 #title{
   position:absolute;
   width: 35%;
   margin-left: 60%;
-  margin-top:-40%;
+  margin-top:-55%;
   padding: 10px;
 }
 
-#author{
+#author, #book_genre{
   position:absolute;
-  width: 20%;
+  width: 23%;
   margin-left: 60%;
-  margin-top:-35%;
+  margin-top:-51%;
   padding: 10px;
 }
 
+#book_genre{
+  width:10%;
+  margin-left: 85%;
+}
+
+#book_selection{
+  position:relative;
+  margin-top: -17%;
+}
 #book_size, #book_pattern{
   position:absolute;
   margin-left: 68%;
@@ -62,19 +72,22 @@ header{
   margin-left: 80%
 }
 
+
 #payment_information{
   position:relative;
   border: 2px solid black;
+  font-family:arial;
   width: 550px;
   height: 300px;
   margin-left: 60%;
-  margin-top:-25%;
+  margin-top:-40%;
 }
 
 #payment_divider{
 position:absolute;
 border: 0.5px solid grey;
 width: 95%;
+margin-top:5%;
 margin-left: 2%;
 }
 
@@ -87,18 +100,13 @@ margin-left: 2%;
   height:20%;
   width: 50%;
   margin-left: 25%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
-#paypal_button{
-  position:absolute;
-  background-color: white;
-  color:rgb(85, 10, 34);
-  border-color:rgb(85, 10, 34);
-  font-size:20px;
-  height:20%;
-  width: 50%;
-  margin-top: 23%;
-  margin-left: 25%;
-
+#disclaimer{
+  font-family: Arial;
+  font-size: 18px;
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 7%;
 }
