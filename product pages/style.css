@@ -6,7 +6,7 @@ header{
 
 
 #main_image{
-  background-color: #2b093f;
+  background-color: white;
   width: 540px;
   height: 540px;
   margin-top: 5%;
@@ -26,7 +26,7 @@ header{
   opacity:0.7;
 }
 
-#other_option1{
+#option1{
   margin-top: -38%;
 }
 
@@ -82,7 +82,13 @@ header{
   margin-left: 60%;
   margin-top:-40%;
 }
-
+#actual_item_amount{
+  background-color: yellow;
+  color:black;
+  font-size: 20px;
+  width:50px;
+  height:50px;
+}
 #payment_divider{
 position:absolute;
 border: 0.5px solid grey;

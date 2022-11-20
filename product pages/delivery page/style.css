@@ -65,10 +65,19 @@
 }
 
 #right_section{
-position:absolute;
+ position:absolute;
  background-color:#2b093f;
  height:730px;
  width:530px;
  margin-left: 60%;
  margin-top:-42%;
 }
+
+#chosen_book{
+  background-color: black;
+  height: 400px;
+  width: 400px;
+  margin-left: 12%;
+  margin-top: 10%;
+}
+

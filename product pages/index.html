@@ -13,11 +13,13 @@
   TRADITIONAL
  </header>
 
+ <div id="product_images">
   <div id="main_image"><img id="main" src="https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1"/></div>
-  <div id="other_option1" class="optional_images"><img src="https://www.dropbox.com/s/368om5pt7jw6hyz/dragon.new.png?dl=1"/> </div>
-  <div id="other_option2" class="optional_images"><img src="https://www.dropbox.com/s/9pn819umudzw0g9/tree.new.png?dl=1"/></div>
-  <div id="other_option3" class="optional_images"><img src="https://www.dropbox.com/s/h374tq6mu7ubvir/patterned.new.png?dl=1"/></div>
-  <div id="other_option4" class="optional_images"><img src="https://www.dropbox.com/s/7qwheahld1qsqxd/hex.new1.png?dl=1"/></div>
+  <div id="option1" class="optional_images"><img src="https://www.dropbox.com/s/368om5pt7jw6hyz/dragon.new.png?dl=1"/> </div>
+  <div id="option2" class="optional_images"><img src="https://www.dropbox.com/s/9pn819umudzw0g9/tree.new.png?dl=1"/></div>
+  <div id="option3" class="optional_images"><img src="https://www.dropbox.com/s/h374tq6mu7ubvir/patterned.new.png?dl=1"/></div>
+  <div id="option4" class="optional_images"><img src="https://www.dropbox.com/s/7qwheahld1qsqxd/hex.new1.png?dl=1"/></div>
+</div>
 
   <div id="book_info">
   <input id="title" placeholder="Title" required></input>
@@ -28,25 +30,31 @@
  <div id="book_selection">
 <select id="book_size">
     <option value="">select book size</option>
-    <option value="1">Lorem X"</option>
-    <option value="2">Lorem Y"</option>
-    <option value="3">Lorem Z"</option>
+    <option value="5" required>Lorem X"</option>
+    <option value="6" required>Lorem Y"</option>
+    <option value="7" required>Lorem Z"</option>
   </select>
 
   <select id="book_pattern">
     <option value="">select book pattern</option>
-    <option value="1">hex</option>
-    <option value="2">dragon</option>
-    <option value="3">tree</option>
-    <option value="4">patterned</option>
+    <option value="1" id="hex" required>hex</option>
+    <option value="2" id="dragon" required>dragon</option>
+    <option value="3" id="tree" required>tree</option>
+    <option value="4" id="patterned" required>patterned</option>
   </select>
 </div>
 
   <div id="payment_information">
     <p id="item_total">Items(s) total</p>
+    <div id="item_total_gbp">
+    <p id="gbp">GBP</p>
+    <div>
+      <p id="actual_item_amount"></p>
+    </div>
+    </div>
     <p id="shipping">Shipping<br>(within UK only)</p>
     <div id="payment_divider"></div>
-    <button type="button" id="checkout_button">Check Out</button>
+    <a href="http://127.0.0.1:5500/product%20pages/delivery%20page/index.html"><button type="button" id="checkout_button">Check Out</button></a>
   </div>
   <p id="disclaimer">
     DISCLAIMER: Every book/set is made to order and hand crafted, which makes every book/set unique. There may be slight variations in the finish of each book/set due to how the process works. The leather could have color variations, or a "patchy" look to it. This effect is beyond our control with many designs, so please do not order without understanding that this is a possibility.

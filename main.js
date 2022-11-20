@@ -37,7 +37,7 @@ window.addEventListener('load', function (event) {
 }
 )*/
 
-const expandImage = document.getElementById('traditional_image');
+/*const expandImage = document.getElementById('traditional_image');
 
 expandImage.addEventListener('mouseover', expand);
 
@@ -69,7 +69,7 @@ cI.addEventListener('mouseout', c);
 
 function c(event){
   cI.style.padding='';
-}
+}*/
 
 
 
