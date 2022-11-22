@@ -13,7 +13,7 @@ background: #000000;
   width:100%;
 }
 
-#beginning_quote{
+#beginning_quote{ 
 margin-left: 20%;
 margin-top: 8%;
 font-family: Baskerville;
@@ -70,18 +70,20 @@ color: #DDA5FE;
   width:1445px;
   display: flex;
   justify-content: space-evenly;
-  font-family: Baskerville;
-  font-size: 20px;
   background-color:white;
   height:13%;
   position:sticky;
   top:0;
   z-index:3;
-}
+} 
 
 #about, #service, #faqs, #contact{
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Baskerville;
+  color:black;
   position: relative;
-  margin-top:0.9%;
+  margin-top:0%;
 }
 
 #home_button{
@@ -133,6 +135,7 @@ margin-top: 20%;
  margin-top:-5%;
  border: 3px solid black;
  padding: 0%;
+
 }
 
 #ornamented_image{
@@ -232,12 +235,17 @@ border-radius: 15px;
 
 #quote_mark_1{
  position:absolute;
- z-index:0;
- padding: -10%;
- margin-left:38%;
+ z-index:-1;
+ margin-left:32.2%;
  margin-top:30%;
- background-color:yellow;
- 
+}
+
+#quote_mark_2{
+  position:absolute;
+  z-index:-1;
+  width:450px;
+  margin-left:-12%;
+  margin-top:42%;
 }
 
 #review_1{
@@ -247,7 +255,7 @@ border-radius: 15px;
 #review_2{
   margin-top:-5%;
   margin-left: 62%; 
-  z-index:2;
+  z-index:3;
 }
 
 #review_3{
@@ -267,17 +275,22 @@ border-radius: 15px;
   color:black;
 }
 
+section{
+margin-top:0%;
+
+}
+
 #review_1_p{
   width:50%;
   text-align: center;
   margin-left:25%;
-  margin-top:-30%;
+  margin-top:-90%;
   z-index:1;
 }
 
 #review_2_p{
   margin-left:55%;
-  margin-top:3%;
+  margin-top:-53%;
 }
 
 #review_3_p{
@@ -289,10 +302,11 @@ border-radius: 15px;
 
 #review_4_p{
 margin-left: 43%;
-margin-top: 1%;
+margin-top: 30%;
 }
 
 #contact_section{
+position:relative;
 background-color: black;
 width: 1445px;
 height: 672px;
@@ -302,73 +316,82 @@ margin-bottom:-2%;
 }
 
 #contact_title{
+  position:absolute;
   font-family: Baskerville;
   color:white;
   font-size:40px;
   position:absolute;
   margin-top: 5%;
-  margin-left:45%;
-}
-
-#first_name_label, #last_name_label, #email_label{
-  color:white;
-  font-family: Baskerville; 
+  margin-left:40%;
 }
 
 #first_name_input{
+  position:absolute;
+  background-color: black;
+  border: black;
   border-bottom: 2px solid white;
-  margin-left:5%;
+  color:white;
+  font-size:2rem;
+  margin-left:6%;
   margin-top:10%;
-  width: 30%;
-  padding:20px;
-}
-
-#last_name{
-  background-color: pink;
-  font-size:50px;
-  margin-left:40%;
-  margin-top:10%;
-  margin-bottom:-3%;
-  width:16%;
-}
-
-#last_name_input{
-  border-bottom: 2px solid white;
-  margin-left:57%;
-  margin-top:-30%;
   width: 35%;
   padding:20px;
 }
 
-#email_label{
-  margin-top:10%;
+#first_name_input::placeholder,
+#last_name_input::placeholder,
+#email_input::placeholder {
+  transform: translateY(15px);
 }
 
-#email{
-  font-size:50px;
-  margin-left:10%;
-  margin-bottom:-13%;
-  width:5%;
+#first_name_input:cursor{
+  transform: translateY(15px);
+}
+
+#last_name_input{
+  position:absolute;
+  background-color: black;
+  border: black;
+  border-bottom: 2px solid white;
+  color:white;
+  font-size:2rem;
+  margin-left:50%;
+  margin-top:10%;
+  width:41%;
+  padding:20px;
 }
 
 #email_input{
-  background-color: black; 
+  position:absolute;
+  background-color: black;
+  border: black;
   border-bottom: 2px solid white;
-  margin-left:22%;
-  margin-top:8%;
+  color:white;
+  font-size:2rem;
+  margin-left:15%;
+  margin-top:16%;
   width: 70%;
   padding:20px;
 }
 
-
-
-
 textarea{
+  position:absolute;
   border:1px solid white;
   background-color:black;
-  margin-top:1%; 
+  color:white;
+  font-size: 1.5rem;
+  margin-top:23%; 
   margin-left:5%;
-  height:25%;
+  height:20%;
   padding:5%;
   width:80%;
 }
+
+
+#first_name_input:focus,
+#last_name_input:focus,
+#email_input:focus, 
+textarea:focus {
+    outline: none;
+}
+

@@ -1,0 +1,53 @@
+#delivery_address_summary{
+  background-color: white;
+  border: 1px solid grey;
+  width:50%;
+  height:150px;
+  margin-left: 5%;
+  margin-top: 8%;
+  
+}
+
+#contact_info_title, #delivery_address_title, #billing_address{
+  font-family:arial;
+  color:rgb(93, 88, 88);
+  margin-left: 5px;
+}
+#contact_info_title{
+  margin-top:-0.5px;
+}
+
+#delivery_address_title{
+  margin-top: 5%;
+}
+
+#billing_address{
+  margin-top:8%;
+}
+
+#payment_method{
+  display:flex;
+  flex-direction: column;;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-family: arial;
+}
+
+label{
+  border: 1px solid grey;
+  width: 50%;
+  padding: 20px;
+}
+
+
+
+
+
+#right_section{
+  position:absolute;
+  background-color:#2b093f;
+  height:1000px;
+  width:530px;
+  margin-left: 60%;
+  margin-top:-42%;
+ }

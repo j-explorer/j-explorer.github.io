@@ -1,0 +1,118 @@
+header{
+  font-family: Baskerville;
+  font-size: 100px;
+  letter-spacing: 4.4rem;
+}
+
+
+#main_image{
+  background-color: white;
+  width: 540px;
+  height: 540px;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+#main{
+  margin-top: 10%;
+}
+
+.optional_images{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.3%;
+  width:138px;
+  height:138px;
+  opacity:0.7;
+}
+
+#option1{
+  margin-top: -38%;
+}
+
+
+
+#book_info{
+  position:relative;
+}
+
+#title{
+  position:absolute;
+  width: 35%;
+  margin-left: 60%;
+  margin-top:-55%;
+  padding: 10px;
+}
+
+#author, #book_genre{
+  position:absolute;
+  width: 23%;
+  margin-left: 60%;
+  margin-top:-51%;
+  padding: 10px;
+}
+
+#book_genre{
+  width:10%;
+  margin-left: 85%;
+}
+
+#book_selection{
+  position:relative;
+  margin-top: -17%;
+}
+#book_size, #book_pattern{
+  position:absolute;
+  margin-left: 68%;
+  margin-top: -30%;
+  padding: 5px;
+}
+
+#book_pattern{
+  margin-left: 80%
+}
+
+
+#payment_information{
+  position:relative;
+  border: 2px solid black;
+  font-family:arial;
+  width: 550px;
+  height: 300px;
+  margin-left: 60%;
+  margin-top:-40%;
+}
+#actual_item_amount{
+  background-color: yellow;
+  color:black;
+  font-size: 20px;
+  width:50px;
+  height:50px;
+}
+#payment_divider{
+position:absolute;
+border: 0.5px solid grey;
+width: 95%;
+margin-top:5%;
+margin-left: 2%;
+}
+
+#checkout_button{
+  position:absolute;
+  background-color: rgba(85, 10, 34, 1);
+  color:white;
+  border: rgb(85, 10, 34);
+  font-size:20px;
+  height:20%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+
+#disclaimer{
+  font-family: Arial;
+  font-size: 18px;
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 7%;
+}
