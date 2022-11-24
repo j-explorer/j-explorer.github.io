@@ -27,7 +27,7 @@
 
 #payment_method{
   display:flex;
-  flex-direction: column;;
+  flex-direction: column;
   margin-top: 5%;
   margin-left: 5%;
   font-family: arial;
@@ -45,7 +45,7 @@ label{
 
 #right_section{
   position:absolute;
-  background-color:#2b093f;
+  background-color:rgba(36, 2, 56, 0.45);
   height:1000px;
   width:530px;
   margin-left: 60%;
