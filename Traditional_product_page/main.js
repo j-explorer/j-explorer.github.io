@@ -84,7 +84,7 @@ optionalImage1.onclick = function (){
   LoremX: {
     price:'A'
   },
-  Lorem : {
+  LoremY: {
     price:'B'
   },
   LoremZ: {
@@ -114,34 +114,43 @@ const bookPattern ={
 const patternSelection= document.getElementById("book_pattern");
 const sizeSelection=document.getElementById("book_size");
 const itemAmount= document.getElementById("actual_item_amount");
-let pattern='hi';
+const sizeAmount= document.getElementById("actual_size_amount");
+const totalAmount= document.getElementById("total_amount"); 
+let patternPrice= '';
+let sizePrice= '';
 
 
-function eventHandler (event) {
- switch (event.target.value){
+
+function pattern (event) {
+
+
+  switch (event.target.value){
   case "1":
  maI.src= "https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1";
  maI.style.height= "440px";
  maI.style.width= "541px";
  maI.style.marginLeft= "0%";
  maI.style.marginTop= "9%";
- pattern=bookPattern.hex.price;
+ patternPrice = bookPattern.hex.price;
  break;
 
-  case "2":
+   case "2":
   maI.src= "https://www.dropbox.com/s/dlck7w2hz222l3l/dragon.new2.png?dl=1";
   maI.style.height= "540px";
   maI.style.width= "";
   maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%";
+  patternPrice = bookPattern.dragon.price;
   break;
 
-  case "3":
+
+    case "3":
     maI.src= "https://www.dropbox.com/s/08qukbvg9p8u9ts/tree.new2.png?dl=1";
     maI.style.height= "540px";
     maI.style.width= "";
     maI.style.marginLeft= "7%";
     maI.style.marginTop= "0%";
+    patternPrice = bookPattern.tree.price;
     break;
 
   case "4":
@@ -150,30 +159,70 @@ function eventHandler (event) {
   maI.style.width= "";
   maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%"; 
+  patternPrice = bookPattern.patterned.price;
   break;
- } 
+
+ default:
+      return itemAmount.innerHTML= "";
+    break; 
+};
+
+  const itemTotal = (patternPrice) =>{
+  return itemAmount.innerHTML=`${patternPrice}`};
+
+  itemTotal(patternPrice);
+
+if(sizePrice && patternPrice){
+  return total_amount.innerHTML=`${patternPrice}${sizePrice}H`;
+} else if(.value === ""){ return total_amount.innerHTML="H"};
 
 };
 
-patternSelection.addEventListener('change',eventHandler)
-//linking select options with price
+  
+  
 
-/*sizeSelection.onchange=function(event) {
+
+
+
+
+
+
+
+
+function size (event) {
+
   switch (event.target.value){
-   case "5":
-    let size=bookSize.LoremX.price;
+    case "5":
+    sizePrice= bookSize.LoremX.price;
+    break;
+
+    case "6":
+    sizePrice= bookSize.LoremY.price;
+    break;
+
+    case "7":
+    sizePrice= bookSize.LoremZ.price;
+    break;
+
+    default:
+      return sizeAmount.innerHTML= "";
     break;
   }
-}*/
-//function to add the values together
+
+  const itemTotal = (sizePrice) =>{
+    return sizeAmount.innerHTML=`${sizePrice}`
+  };
+  
+  itemTotal(sizePrice);
+
+  if(sizePrice && patternPrice){
+    return total_amount.innerHTML=`${patternPrice}${sizePrice}H`;
+  } else if(event.target.value === ""){ return total_amount.innerHTML="H"};
 
 
-const itemTotal = (pattern) =>{
-  return itemAmount.innerHTML=`${pattern}`;
 };
 
-itemTotal(pattern);
+patternSelection.addEventListener('change', pattern);
+sizeSelection.addEventListener('change', size);
 
-//transferring data to delivery and payment pages
-//localStorage.setItem("productImage","https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1");
 
