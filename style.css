@@ -119,6 +119,7 @@ margin-top:20px;
   margin-top: 5%;
 }
 
+
 .traditional_section{
   background-color:rgba(36, 2, 56, 0.45);
   width: 848px;
@@ -356,9 +357,6 @@ margin-bottom:-2%;
   transform: translateY(15px);
 }
 
-#first_name_input:cursor{
-  transform: translateY(15px);
-}
 
 #last_name_input{
   position:absolute;
@@ -433,4 +431,34 @@ textarea:focus {
 
 #S,#E,#N,#D{
  width: 30px;
+}
+
+#about_top, #traditional_top{
+  width: 0%;
+  height:10%;
+  background-color:blue;
+}
+
+#hide{
+  display: '';
+ 
+}
+
+#unhide{
+  position:absolute;
+  visibility: hidden;
+  color:white;
+  margin-top:15%;
+  margin-left:30%;
+}
+
+#thank_you{
+  font-size: 50px;
+}
+
+#response{
+  font-family: Baskerville;
+  font-size: 40px;
+  margin-left: -8%;
+  width:100%;
 }

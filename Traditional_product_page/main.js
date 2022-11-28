@@ -174,7 +174,7 @@ function pattern (event) {
 
 if(sizePrice && patternPrice){
   return total_amount.innerHTML=`${patternPrice}${sizePrice}H`;
-} else if(.value === ""){ return total_amount.innerHTML="H"};
+};
 
 };
 

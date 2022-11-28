@@ -22,28 +22,32 @@
   <div id="option4" class="optional_images"><img src="https://www.dropbox.com/s/7qwheahld1qsqxd/hex.new1.png?dl=1"/></div>
 </div>
 
-  <div id="book_info">
+<form id="product_form">
+<div id="book_info">
   <input id="title" placeholder="Title" required></input>
   <input id="author" placeholder="Author" required></input>
   <input id="book_genre" placeholder="Fantasy Genre" readonly></input>
  </div>
 
+
  <div id="book_selection" >
 <select id="book_size" required>
     <option value="">select book size</option>
-    <option value="5" required>Lorem X"</option>
-    <option value="6" required>Lorem Y"</option>
-    <option value="7" required>Lorem Z"</option>
+    <option value="5">Lorem X"</option>
+    <option value="6">Lorem Y"</option>
+    <option value="7">Lorem Z"</option>
   </select>
 
   <select id="book_pattern" required>
     <option value="">select book pattern</option>
-    <option value="1" id="hex" required>hex</option>
-    <option value="2" id="dragon" required>dragon</option>
-    <option value="3" id="tree" required>tree</option>
-    <option value="4" id="patterned" required>patterned</option>
+    <option value="1" id="hex">hex</option>
+    <option value="2" id="dragon">dragon</option>
+    <option value="3" id="tree">tree</option>
+    <option value="4" id="patterned">patterned</option>
   </select>
 </div>
+
+</form>
 
 <div id="payment_information">
 
@@ -59,6 +63,7 @@
     </div>
  </div>
 
+ 
   <div id="shipping_section">
     <div id="shipping_details">
       <p id="shipping">Shipping</p>
@@ -84,13 +89,14 @@
     </div>
 
   </div>
-    <a href="http://127.0.0.1:5500/Traditional_product_page/Traditional_delivery_page/index.html"><button type="button" id="checkout_button">Check Out</button></a>
+    <a href="http://127.0.0.1:5500/Traditional_product_page/Traditional_delivery_page/index.html"><button type="submit" id="checkout_button" form="product_form" action="http://127.0.0.1:5500/Traditional_product_page/Traditional_delivery_page/index.html">Check Out</button></a>
 
 </div>
-
+<div id="background_disclaimer">
   <p id="disclaimer">
     DISCLAIMER: Every book/set is made to order and hand crafted, which makes every book/set unique. There may be slight variations in the finish of each book/set due to how the process works. The leather could have color variations, or a "patchy" look to it. This effect is beyond our control with many designs, so please do not order without understanding that this is a possibility.
   </p>
+</div>
  </body>
   <script src="./main.js"></script>
   </html>

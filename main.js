@@ -35,6 +35,17 @@ window.addEventListener('scroll', function() {
 }) 
 
 
+//"Thank you" after sending message in contact section
+const form= document.getElementById('contact_section');
+const button= document.getElementById('submit');
+const hide = document.getElementById('hide');
+const unhide = document.getElementById('unhide');
+
+addEventListener('submit', (event) => {
+  hide.style.display = 'none';
+  unhide.style.visibility ='visible';
+}
+);
 
 
 
