@@ -414,7 +414,7 @@ textarea:focus {
   width: 19.5%;
   height:15%;
   margin-left:81%;
-  margin-top:31.3%;
+  margin-top:31.5%;
 }
 
 #submit_button:hover{
@@ -423,14 +423,17 @@ textarea:focus {
 }
 
 #SEND{
-  font-family: arial;
+  font-family: Baskerville;
   transform:rotate(270deg);
-  font-size: 35px;
+  font-size: 30px;
   margin-top:-89.5%;
 }
 
 #S,#E,#N,#D{
  width: 30px;
+}
+#S,#E,#N{
+  font-size:34px;
 }
 
 #about_top, #traditional_top{

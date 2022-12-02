@@ -79,5 +79,118 @@
   width: 400px;
   margin-left: 12%;
   margin-top: 10%;
+} 
+
+#image{
+  position:absolute;
+  color:white;
+  font-size: 80px;
+  font-family: arial;
+  margin-left: 15%;
+  margin-top: 25%;
 }
+
+ #payment_information{
+  font-size: 18px;
+  font-family: arial;
+  border: 1px solid black;
+  width: 80%;
+  height: 30%;
+  margin-left: 9.5%;
+  margin-top: 5%;
+}
+
+#gbp{
+  font-size: 16px;
+  margin-top: 35%;
+}
+
+#item_total_section{
+display:flex;
+flex-direction: row;
+}
+
+#item_total{
+  margin-left:3%;
+}
+
+#item_total_gbp,#actual_amounts{
+display:flex;
+flex-direction: row;
+width:10%;
+height:40px;
+}
+
+#item_total_gbp{
+margin-left: 55%;
+}
+
+#actual_amounts{
+  width: 40px;
+  margin-top:-3px;
+  margin-left: 12px;
+}
+
+#actual_item_amount,#actual_size_amount{
+  color:black;
+  font-size: 20px;
+}
+
+ #shipping_section{
+  display: flex;
+  flex-direction: row;
+  margin-top:-1%;
+  margin-left: 3%;
+ }
+
+ #shipping{
+  margin-left:3%;
+ }
+
+ #shipping_location{
+  font-size: 15px;
+  margin-left: -10%;
+  margin-top:-10%;
+ }
+
+ #shipping_gbp{
+  display:flex;
+  flex-direction: row;
+  margin-left: 56.5%;
+ }
+
+ #shipping_amount{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 27%;
+ }
+
+#payment_divider{
+border: 0.5px solid black;
+width: 95%;
+margin-top:2%;
+margin-left: 2%;
+}
+
+ #total_section{
+  display: flex;
+  flex-direction: row;
+  margin-top:3%;
+ }
+
+#total{
+ margin-left:3%;
+ }
+
+ #total_gbp{
+  display: flex;
+  flex-direction: row;
+  margin-left: 70%;
+ }
+
+ #total_amount{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 27%;
+ }
 

@@ -14,9 +14,9 @@
   <body>
   <div id="left_section">
    <div id="delivery_address_summary">
-    <p id="contact_info_title">Contact Information</p>
-    <p id="delivery_address_title">Delivery Address</p>
-    <p id="billing_address">Billing address same as Delivery address</p>
+     <p id="contact_info_title">Contact Information</p>
+     <p id="delivery_address_title">Delivery Address</p>
+     <p id="billing_address">Billing address same as Delivery address</p>
     </div>
 
     <div id="payment_method">
@@ -25,14 +25,52 @@
     </div>
   </div>
 
-  <div id="right_section"></div>
+  <div id="right_section"> 
+     <div id="chosen_book">
+       <p id="image">Image</p>
+     </div>
 
-
-  </body>
-
-
-
-
-
-
-  </html>
+    <div id="payment_information">
+      <div id="item_total_section">
+        <p id="item_total">Items(s) total</p>
+        
+         <div id="item_total_gbp">
+             <p id="gbp">GBP</p>
+           <div id="actual_amounts">
+             <p id="actual_item_amount"></p>
+             <p id="actual_size_amount"></p>
+           </div>
+         </div>
+      </div>
+   
+    
+     <div id="shipping_section">
+       <div id="shipping_details">
+         <p id="shipping">Shipping</p>
+         <p id="shipping_location">(within UK only)</p> 
+       </div>
+   
+       <div id="shipping_gbp">
+         <p id="gbp">GBP</p>
+         <p id="shipping_amount">H</p>
+       </div>
+     </div>
+   
+     <div id="payment_divider"></div>
+       
+     <div id="total_section">
+       <div id="total">
+         <p>Total</p>
+       </div>
+   
+       <div id="total_gbp">
+         <p id="gbp">GBP</p>
+         <p id="total_amount"></p>
+       </div> 
+     </div>
+   </div>
+ </div>
+  
+</body>
+<script src="./main.js"></script>
+</html>

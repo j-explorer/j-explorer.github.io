@@ -1,30 +1,4 @@
-
-/* does not work to change opacity
-
-const optionalImages= document.getElementsByClassName("optional_images");
-
-for(let i=0; i<optionalImages.length; i++){
-  optionalImages[i].addEventListener = ('mouseover', opacity);
-
-function opacity(event) {
- this.style.opacity= "1";
-}
-}*/
-
-
-/*functions works to change opacity
-const opI=document.getElementsByClassName("optional_images");
-
-for(let i=0; i<opI.length; i++){
- opI[i].onmouseover = function (){
-  this.style.opacity= "1";
- }
- opI[i].onmouseout = function (){
-  this.style.opacity= "";
- }
-}*/
-
-//combine above functions with ability to click optional image and enlarge it to main image.
+//change opacity of the optional images when hovered
 
 const optionalImage=document.getElementsByClassName("optional_images");
 
@@ -37,46 +11,34 @@ for(let i=0; i<optionalImage.length; i++){
  }
 
 }
+
+//change optional image to the main image 
+
 const optionalImage1=document.getElementById("option1");
+const optionalImage2=document.getElementById("option2");
+const optionalImage3=document.getElementById("option3");
+const optionalImage4=document.getElementById("option4");
 const maI = document.getElementById("main"); 
 
 optionalImage1.onclick = function (){
   maI.src= "https://www.dropbox.com/s/dlck7w2hz222l3l/dragon.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%";
  }
-
- const optionalImage2=document.getElementById("option2");
 
  optionalImage2.onclick = function (){
   maI.src= "https://www.dropbox.com/s/08qukbvg9p8u9ts/tree.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%";
  }
-
- const optionalImage3=document.getElementById("option3");
 
  optionalImage3.onclick = function (){
   maI.src= "https://www.dropbox.com/s/qxp9lutdapkv29d/patterned.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%";
  }
 
- const optionalImage4=document.getElementById("option4");
-
  optionalImage4.onclick = function (){
   maI.src= "https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1";
-  maI.style.height= "440px";
-  maI.style.width= "541px";
-  maI.style.marginLeft= "0%";
-  maI.style.marginTop= "9%";
  }
+ 
 
  //select options as objects
 
@@ -105,11 +67,11 @@ const bookPattern ={
   patterned:{
     price:'G'
   }
-}
+};
 
 
 
-//linking select options with images and price
+//linking 'select book pattern' options with images and price
 
 const patternSelection= document.getElementById("book_pattern");
 const sizeSelection=document.getElementById("book_size");
@@ -122,42 +84,27 @@ let sizePrice= '';
 
 
 function pattern (event) {
-
-
-  switch (event.target.value){
+switch (event.target.value){
   case "1":
  maI.src= "https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1";
- maI.style.height= "440px";
- maI.style.width= "541px";
- maI.style.marginLeft= "0%";
- maI.style.marginTop= "9%";
  patternPrice = bookPattern.hex.price;
  break;
 
    case "2":
   maI.src= "https://www.dropbox.com/s/dlck7w2hz222l3l/dragon.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%";
   patternPrice = bookPattern.dragon.price;
   break;
 
 
-    case "3":
-    maI.src= "https://www.dropbox.com/s/08qukbvg9p8u9ts/tree.new2.png?dl=1";
-    maI.style.height= "540px";
-    maI.style.width= "";
-    maI.style.marginLeft= "7%";
-    maI.style.marginTop= "0%";
-    patternPrice = bookPattern.tree.price;
-    break;
+  case "3":
+  maI.src= "https://www.dropbox.com/s/08qukbvg9p8u9ts/tree.new2.png?dl=1";
+  maI.style.marginTop= "0%";
+  patternPrice = bookPattern.tree.price;
+  break;
 
   case "4":
   maI.src= "https://www.dropbox.com/s/qxp9lutdapkv29d/patterned.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
   maI.style.marginTop= "0%"; 
   patternPrice = bookPattern.patterned.price;
   break;
@@ -165,7 +112,7 @@ function pattern (event) {
  default:
       return itemAmount.innerHTML= "";
     break; 
-};
+ };
 
   const itemTotal = (patternPrice) =>{
   return itemAmount.innerHTML=`${patternPrice}`};
@@ -174,24 +121,14 @@ function pattern (event) {
 
 if(sizePrice && patternPrice){
   return total_amount.innerHTML=`${patternPrice}${sizePrice}H`;
+ };
 };
 
-};
-
-  
-  
-
-
-
-
-
-
-
-
+ 
+//linking 'select book size' options with price
 
 function size (event) {
-
-  switch (event.target.value){
+switch (event.target.value){
     case "5":
     sizePrice= bookSize.LoremX.price;
     break;

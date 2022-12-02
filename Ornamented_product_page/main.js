@@ -1,3 +1,5 @@
+//change opacity of the optional images when hovered
+
 const optionalImage=document.getElementsByClassName("optional_images");
 
 for(let i=0; i<optionalImage.length; i++){
@@ -5,50 +7,30 @@ for(let i=0; i<optionalImage.length; i++){
   this.style.opacity= "1";
  }
  optionalImage[i].onmouseout = function (){
-  this.style.opacity= "";
+  this.style.opacity= ""; 
  }
 
 }
-const optionalImage1=document.getElementById("option1");
+
+//change optional main image to the main optional image 
+
+const optionalImage1=document.getElementById("option1"); 
+const optionalImage2=document.getElementById("option2");
+const optionalImage3=document.getElementById("option3");
 const maI = document.getElementById("main"); 
 
 optionalImage1.onclick = function (){
-  maI.src= "https://www.dropbox.com/s/h20nj613efyobu7/labradorite.new.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
-  maI.style.marginTop= "0%";
+  maI.src= "https://www.dropbox.com/s/qm37ven6prod84l/labradorite.maI.png?dl=1";
  }
-
- const optionalImage2=document.getElementById("option2");
 
  optionalImage2.onclick = function (){
-  maI.src= "https://www.dropbox.com/s/1rd065hq80b3gzm/tiger%27s%20eye.new.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
-  maI.style.marginTop= "0%";
+  maI.src= "https://www.dropbox.com/s/wd61ay6lwfhmb6h/tiger.maI.png?dl=1";
  }
-
- const optionalImage3=document.getElementById("option3");
 
  optionalImage3.onclick = function (){
-  maI.src= "https://www.dropbox.com/s/qxp9lutdapkv29d/patterned.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
-  maI.style.marginTop= "0%";
+  maI.src= "https://www.dropbox.com/s/6pijdj8ir1qdgnk/lapis.maI.png?dl=1";
  }
 
- const optionalImage4=document.getElementById("option4");
-
- optionalImage4.onclick = function (){
-  maI.src= "https://www.dropbox.com/s/tmjy8lao26qf30k/Pasted%20Graphic%201.new1.png?dl=1";
-  maI.style.height= "440px";
-  maI.style.width= "541px";
-  maI.style.marginLeft= "0%";
-  maI.style.marginTop= "9%";
- }
 
  //select options as objects
 
@@ -56,7 +38,7 @@ optionalImage1.onclick = function (){
   LoremX: {
     price:'A'
   },
-  Lorem : {
+  LoremY: {
     price:'B'
   },
   LoremZ: {
@@ -64,87 +46,97 @@ optionalImage1.onclick = function (){
   }
 };
 
-const bookPattern ={
-  hex:{
+const bookOrnament ={
+  lapis:{
     price:'D'
   },
-  dragon:{
+  tiger:{
     price:'E'
   },
-  tree:{
+  labradorite:{
     price:'F'
-  },
-  patterned:{
-    price:'G'
   }
-}
+};
 
 
 
-//linking select options with images and price
+//linking 'select ornament' options with images and price
 
-const patternSelection= document.getElementById("book_pattern");
+const ornamentSelection= document.getElementById("book_ornament");
 const sizeSelection=document.getElementById("book_size");
 const itemAmount= document.getElementById("actual_item_amount");
-let pattern='hi';
+const sizeAmount= document.getElementById("actual_size_amount");
+const totalAmount= document.getElementById("total_amount"); 
+let ornamentPrice= '';
+let sizePrice= '';
 
 
-function eventHandler (event) {
- switch (event.target.value){
+function ornament (event) {
+switch (event.target.value){
   case "1":
- maI.src= "https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1";
- maI.style.height= "440px";
- maI.style.width= "541px";
- maI.style.marginLeft= "0%";
- maI.style.marginTop= "9%";
- pattern=bookPattern.hex.price;
+ maI.src= "https://www.dropbox.com/s/qm37ven6prod84l/labradorite.maI.png?dl=1";
+ ornamentPrice=bookOrnament.labradorite.price;
  break;
 
   case "2":
-  maI.src= "https://www.dropbox.com/s/h20nj613efyobu7/labradorite.new.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
-  maI.style.marginTop= "0%";
+  maI.src= "https://www.dropbox.com/s/wd61ay6lwfhmb6h/tiger.maI.png?dl=1";
+  ornamentPrice=bookOrnament.tiger.price;
   break;
 
   case "3":
-    maI.src= "https://www.dropbox.com/s/08qukbvg9p8u9ts/tree.new2.png?dl=1";
-    maI.style.height= "540px";
-    maI.style.width= "";
-    maI.style.marginLeft= "7%";
-    maI.style.marginTop= "0%";
+    maI.src= "https://www.dropbox.com/s/6pijdj8ir1qdgnk/lapis.maI.png?dl=1";
+    ornamentPrice=bookOrnament.lapis.price;
     break;
 
-  case "4":
-  maI.src= "https://www.dropbox.com/s/qxp9lutdapkv29d/patterned.new2.png?dl=1";
-  maI.style.height= "540px";
-  maI.style.width= "";
-  maI.style.marginLeft= "7%";
-  maI.style.marginTop= "0%"; 
+  default:
+    return itemAmount.innerHTML= "";
+  break; 
+ };
+
+ const itemTotal = (ornamentPrice) =>{
+  return itemAmount.innerHTML=`${ornamentPrice}`};
+
+  itemTotal(ornamentPrice);
+
+if(sizePrice && ornamentPrice){
+  return total_amount.innerHTML=`${ornamentPrice}${sizePrice}H`;
+ };
+};
+
+
+//linking 'select book size' options with price
+
+function size (event) {
+switch (event.target.value){
+  case "5":
+  sizePrice= bookSize.LoremX.price;
   break;
- } 
+
+  case "6":
+  sizePrice= bookSize.LoremY.price;
+  break;
+
+  case "7":
+  sizePrice= bookSize.LoremZ.price;
+  break;
+
+  default:
+    return sizeAmount.innerHTML= "";
+  break;
+}
+
+const itemTotal = (sizePrice) =>{
+  return sizeAmount.innerHTML=`${sizePrice}`
+};
+
+itemTotal(sizePrice);
+
+if(sizePrice && ornamentPrice){
+  return total_amount.innerHTML=`${ornamentPrice}${sizePrice}H`;
+} else if(event.target.value === ""){ return total_amount.innerHTML="H"};
+
 
 };
 
-patternSelection.addEventListener('change',eventHandler)
-//linking select options with price
-
-/*sizeSelection.onchange=function(event) {
-  switch (event.target.value){
-   case "5":
-    let size=bookSize.LoremX.price;
-    break;
-  }
-}*/
-//function to add the values together
-
-
-const itemTotal = (pattern) =>{
-  return itemAmount.innerHTML=`${pattern}`;
-};
-
-itemTotal(pattern);
-
-//transferring data to delivery and payment pages
-//localStorage.setItem("productImage","https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1");
+ornamentSelection.addEventListener('change', ornament);
+sizeSelection.addEventListener('change', size);

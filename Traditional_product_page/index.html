@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
   <head>
@@ -14,39 +14,48 @@
   TRADITIONAL
  </header>
 
- <div id="product_images">
-  <div id="main_image"><img id="main" src="https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1"/></div>
-  <div id="option1" class="optional_images"><img src="https://www.dropbox.com/s/368om5pt7jw6hyz/dragon.new.png?dl=1"/> </div>
-  <div id="option2" class="optional_images"><img src="https://www.dropbox.com/s/9pn819umudzw0g9/tree.new.png?dl=1"/></div>
-  <div id="option3" class="optional_images"><img src="https://www.dropbox.com/s/h374tq6mu7ubvir/patterned.new.png?dl=1"/></div>
-  <div id="option4" class="optional_images"><img src="https://www.dropbox.com/s/7qwheahld1qsqxd/hex.new1.png?dl=1"/></div>
+<div id="product_images">
+  <div id="main_image">
+    <img id="main" src="https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1"/>
+  </div>
+  <div id="option1" class="optional_images">
+    <img src="https://www.dropbox.com/s/368om5pt7jw6hyz/dragon.new.png?dl=1"/> 
+  </div>
+  <div id="option2" class="optional_images">
+    <img src="https://www.dropbox.com/s/9pn819umudzw0g9/tree.new.png?dl=1"/>
+  </div>
+  <div id="option3" class="optional_images">
+    <img src="https://www.dropbox.com/s/h374tq6mu7ubvir/patterned.new.png?dl=1"/>
+  </div>
+  <div id="option4" class="optional_images">
+    <img src="https://www.dropbox.com/s/7qwheahld1qsqxd/hex.new1.png?dl=1"/>
+  </div>
 </div>
 
-<form id="product_form">
-<div id="book_info">
-  <input id="title" placeholder="Title" required></input>
-  <input id="author" placeholder="Author" required></input>
-  <input id="book_genre" placeholder="Fantasy Genre" readonly></input>
+<form id="product_form" action="Traditional_delivery_page/index.html">
+ <div id="book_info">
+   <input id="title" placeholder="Title" required></input>
+   <input id="author" placeholder="Author" required></input>
+   <input id="book_genre" placeholder="Fantasy Genre" readonly></input>
  </div>
 
 
- <div id="book_selection" >
-<select id="book_size" required>
-    <option value="">select book size</option>
-    <option value="5">Lorem X"</option>
-    <option value="6">Lorem Y"</option>
-    <option value="7">Lorem Z"</option>
-  </select>
+  <div id="book_selection">
+   <select id="book_size" required>
+     <option value="">select book size</option>
+     <option value="5">Lorem X"</option>
+     <option value="6">Lorem Y"</option>
+     <option value="7">Lorem Z"</option>
+   </select>
 
-  <select id="book_pattern" required>
-    <option value="">select book pattern</option>
-    <option value="1" id="hex">hex</option>
-    <option value="2" id="dragon">dragon</option>
-    <option value="3" id="tree">tree</option>
-    <option value="4" id="patterned">patterned</option>
-  </select>
-</div>
-
+   <select id="book_pattern" required>
+     <option value="">select book pattern</option>
+     <option value="1" id="hex">hex</option>
+     <option value="2" id="dragon">dragon</option>
+     <option value="3" id="tree">tree</option>
+     <option value="4" id="patterned">patterned</option>
+   </select>
+  </div>
 </form>
 
 <div id="payment_information">
@@ -55,11 +64,11 @@
     <p id="item_total">Items(s) total</p>
      
     <div id="item_total_gbp">
-      <p id="gbp">GBP</p>
-        <div id="actual_amounts">
+        <p id="gbp">GBP</p>
+      <div id="actual_amounts">
         <p id="actual_item_amount"></p>
         <p id="actual_size_amount"></p>
-       </div>
+      </div>
     </div>
  </div>
 
@@ -76,7 +85,7 @@
     </div>
   </div>
 
-    <div id="payment_divider"></div>
+  <div id="payment_divider"></div>
     
   <div id="total_section">
     <div id="total">
@@ -87,16 +96,17 @@
       <p id="gbp">GBP</p>
       <p id="total_amount"></p>
     </div>
-
   </div>
-    <a href="http://127.0.0.1:5500/Traditional_product_page/Traditional_delivery_page/index.html"><button type="submit" id="checkout_button" form="product_form" action="http://127.0.0.1:5500/Traditional_product_page/Traditional_delivery_page/index.html">Check Out</button></a>
+
+ 
+    <button id="checkout_button" type="submit"  form="product_form">Check Out</button>
 
 </div>
-<div id="background_disclaimer">
+
   <p id="disclaimer">
     DISCLAIMER: Every book/set is made to order and hand crafted, which makes every book/set unique. There may be slight variations in the finish of each book/set due to how the process works. The leather could have color variations, or a "patchy" look to it. This effect is beyond our control with many designs, so please do not order without understanding that this is a possibility.
   </p>
-</div>
+
  </body>
   <script src="./main.js"></script>
-  </html>
+ </html>
