@@ -230,7 +230,6 @@ margin-left: 2%;
 
  
   .optional_images{
-    display: inline-block;
     opacity:0.7;
   }
 
@@ -253,12 +252,11 @@ margin-left: 2%;
   }
 
   #book_genre{
-    width:10%;
+    width:13%;
     margin-left: 75%;
     margin-top:-40%;
     padding: 15px;
   }
-
   #book_selection{
     margin-top: 15%;
   }
