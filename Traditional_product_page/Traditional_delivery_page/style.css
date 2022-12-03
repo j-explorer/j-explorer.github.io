@@ -202,8 +202,7 @@ margin-left: 2%;
  @media screen and (min-width:320px) and (max-width:480px){
    
   body{
-    display: flex;
-    flex-direction: row;
+    display: block;
   }
 
  #contact_info_title, #delivery_address_title{
