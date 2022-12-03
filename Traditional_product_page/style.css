@@ -215,13 +215,14 @@ margin-left: 2%;
 }
 
 @media screen and (min-width:320px) and (max-width:480px){
-  header{
+
+    header{
     font-size: 50px;
     letter-spacing: 0rem;
-    margin-left: 10%;
+    margin-left: 8%;
   }
 
-  #main_image{
+  #main{
     width:10%;
     margin-left: -10%;
     margin-top: 30%;
@@ -235,13 +236,13 @@ margin-left: 2%;
   }
 
   #title{
-    width: 80%;
+    width: 90%;
     margin-left: 3%;
     padding: 15px;
   }
   
   #author{
-    width: 80%;
+    width: 70%;
     margin-left: 3%;
     margin-top:-40%;
     padding: 15px;
@@ -253,19 +254,22 @@ margin-left: 2%;
   }
 
   #book_selection{
-    margin-top: 20%;
+    margin-top: 15%;
   }
   
   #book_size, #book_pattern{
-    margin-left: 20%;
+    margin-left: 3%;
     padding: 15px;
   }
 
+  #book_pattern{
+    margin-left: 30%;
+  }
 
 #payment_information{
-  width: 550px;
+  width: 50%;
   height: 300px;
-  margin-left: 20%;
+  margin-left: 3%;
   margin-top:0%;
 }
 }
