@@ -8,6 +8,14 @@ header{
   letter-spacing: 4.4rem;
 }
 
+.pointer{ 
+  cursor: pointer;
+}
+
+.text{
+  cursor: text; 
+}
+
 #main_image{
   width: 540px;
   height: 540px;

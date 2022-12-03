@@ -18,38 +18,38 @@
   <div id="main_image">
     <img id="main" src="https://www.dropbox.com/s/vo2h2ux0twcvnba/hex.new.png?dl=1"/>
   </div>
-  <div id="option1" class="optional_images">
+  <div id="option1" class="optional_images pointer">
     <img src="https://www.dropbox.com/s/368om5pt7jw6hyz/dragon.new.png?dl=1"/> 
   </div>
-  <div id="option2" class="optional_images">
+  <div id="option2" class="optional_images pointer">
     <img src="https://www.dropbox.com/s/9pn819umudzw0g9/tree.new.png?dl=1"/>
   </div>
-  <div id="option3" class="optional_images">
+  <div id="option3" class="optional_images pointer">
     <img src="https://www.dropbox.com/s/h374tq6mu7ubvir/patterned.new.png?dl=1"/>
   </div>
-  <div id="option4" class="optional_images">
+  <div id="option4" class="optional_images pointer">
     <img src="https://www.dropbox.com/s/7qwheahld1qsqxd/hex.new1.png?dl=1"/>
   </div>
 </div>
 
 <form id="product_form" action="Traditional_delivery_page/index.html">
  <div id="book_info">
-   <input id="title" placeholder="Title" required></input>
-   <input id="author" placeholder="Author" required></input>
+   <input id="title" class="text" placeholder="Title" required></input>
+   <input id="author" class="text" placeholder="Author" required></input>
    <input id="book_genre" placeholder="Fantasy Genre" readonly></input>
  </div>
 
 
   <div id="book_selection">
-   <select id="book_size" required>
-     <option value="">select book size</option>
+   <select id="book_size" class="pointer" required>
+     <option id="value1" value="">select book size</option>
      <option value="5">Lorem X"</option>
      <option value="6">Lorem Y"</option>
      <option value="7">Lorem Z"</option>
    </select>
 
-   <select id="book_pattern" required>
-     <option value="">select book pattern</option>
+   <select id="book_pattern" class="pointer" required>
+     <option id="value2" value="">select book pattern</option>
      <option value="1" id="hex">hex</option>
      <option value="2" id="dragon">dragon</option>
      <option value="3" id="tree">tree</option>
@@ -64,7 +64,7 @@
     <p id="item_total">Items(s) total</p>
      
     <div id="item_total_gbp">
-        <p id="gbp">GBP</p>
+        <p id="gbp">£</p>
       <div id="actual_amounts">
         <p id="actual_item_amount"></p>
         <p id="actual_size_amount"></p>
@@ -80,7 +80,7 @@
     </div>
 
     <div id="shipping_gbp">
-      <p id="gbp">GBP</p>
+      <p id="gbp">£</p>
       <p id="shipping_amount">H</p>
     </div>
   </div>
@@ -93,13 +93,13 @@
     </div>
 
     <div id="total_gbp">
-      <p id="gbp">GBP</p>
+      <p id="gbp">£</p>
       <p id="total_amount"></p>
     </div>
   </div>
 
  
-    <button id="checkout_button" type="submit"  form="product_form">Check Out</button>
+    <button id="checkout_button" class="pointer" type="submit"  form="product_form">Check Out</button>
 
 </div>
 

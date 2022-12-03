@@ -1,3 +1,9 @@
+body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
 .black_background{
 position:relative;
 margin-left:-2%;
@@ -34,7 +40,7 @@ font-size: 48px;
 color: #DDA5FE;
 }
 
-.fadein_1{
+#fadein_1{
   animation: fadeIn 4s;
 }
 
@@ -43,7 +49,7 @@ color: #DDA5FE;
 100%{opacity:1;}
 }
 
-.fadein_2{
+#fadein_2{
   animation: fadeIn 4s forwards;
   animation-delay: 1.5s;
   opacity: 0%;
@@ -98,7 +104,7 @@ background-color:black;
 width:25px;
 height:10px;
 border-radius:50%;
-margin-top:20px;
+margin-top:26px;
 }
 
 .about_section{
@@ -207,7 +213,7 @@ margin-top: 20%;
 
 #custom_button{
 position:absolute;
-background-color: rgba(85, 10, 34, 1);
+background-color: rgb(85, 10, 34);
 width: 468.11px;
 height: 133px;
 margin-top: 10%;
@@ -324,7 +330,6 @@ background-color: black;
 width: 1445px;
 height: 672px;
 margin-top: 15%;
-margin-left:-0.5rem;
 margin-bottom:-2%;
 }
 
@@ -464,4 +469,18 @@ textarea:focus {
   font-size: 40px;
   margin-left: -8%;
   width:100%;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+  .black_background{
+    width: 480px;
+    height: 300px;
+  }
+
+  #quote{
+    width:50%;
+  }
+
 }

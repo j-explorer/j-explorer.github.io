@@ -13,6 +13,20 @@ function eventHandler(){
 
 }
 
+//changing the quote when home button clicked
+const beginningQuote = document.getElementById("beginning_quote");
+const endingQuote = document.getElementById("ending_quote");
+const fadeIn1= document.getElementById("fadein_1");
+const fadeIn2= document.getElementById("fadein_2"); 
+
+let eventTarget = document.getElementById("home_button");
+
+addEventListener('click', function() {
+  beginningQuote.innerHTML= '"We judge our books...';
+  endingQuote.innerHTML='by their covers"';
+  endingQuote.style.marginLeft='61%';
+});
+
 
 //parallax effect
 

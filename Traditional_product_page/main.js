@@ -81,7 +81,8 @@ const totalAmount= document.getElementById("total_amount");
 let patternPrice= '';
 let sizePrice= '';
 
-
+const select1=document.getElementById('value1');
+const select2=document.getElementById('value2');
 
 function pattern (event) {
 switch (event.target.value){
@@ -117,14 +118,12 @@ switch (event.target.value){
   const itemTotal = (patternPrice) =>{
   return itemAmount.innerHTML=`${patternPrice}`};
 
-  itemTotal(patternPrice);
 
-if(sizePrice && patternPrice){
-  return total_amount.innerHTML=`${patternPrice}${sizePrice}H`;
- };
+  itemTotal(patternPrice);
 };
 
  
+
 //linking 'select book size' options with price
 
 function size (event) {

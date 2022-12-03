@@ -1,3 +1,7 @@
+.pointer{
+  cursor: pointer;
+}
+
 #contact_info_title, #delivery_address_title{
   font-family: arial;
   font-size: 20px;
