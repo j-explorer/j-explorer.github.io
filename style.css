@@ -474,7 +474,7 @@ textarea:focus {
 
 @media screen and (min-width:320px) and (max-width:480px){
 
- body{
+  body{
     margin:0;
     padding:0;
     overflow-x:hidden;
@@ -491,11 +491,11 @@ textarea:focus {
   }
 
   #beginning_quote{
-    margin-left:0%;
+    margin-left:2%;
   }
 
   #ending_quote{
-    margin-left: 0%;
+    margin-left: 5%;
   }
     
   #beginning_quote::first-letter{
@@ -503,15 +503,12 @@ textarea:focus {
   }
 
   #intro_images{
-   margin-left: 4%;
-   margin-right: 4%;
-   margin-top: 4%;
-   height:50px;
-   width: 50px;
+   height:100px;
+   width: 100px;
   }
   
   #nav_bar{
-      width: 100%;
+      width: 105%;
       position:sticky;
       top:0;
       z-index:3;
@@ -531,17 +528,17 @@ textarea:focus {
   
   .traditional_section, .ornamented_section{
     width:400px;
-    margin-top:35%;
-    margin-left: 3%;
+    margin-top:0%;
+    margin-left: 1%;
     margin-top:20%;
   }
   
   #traditional_image{
-    margin-left:-3%;
+    margin-left:-1%;
   }
 
   #ornamented_image{
-    margin-left:-30%;
+    margin-left:-80%;
   }
 
   #traditional_title, #ornamented_title{
@@ -556,6 +553,15 @@ textarea:focus {
     margin-top:15%;
   }
  
+  #custom_button{
+    width: 300px;
+    height: 70px;
+    }
+    
+    #custom_p{
+      font-size: 35px;
+    }
+    
   #quote1_parallax{
    margin-left:40%;
    width: 30px;
@@ -564,69 +570,54 @@ textarea:focus {
   
   
   #review_1{
-    width: 60px;
+    padding: 20%;
   }
   
   #review_2{
-    width:70px;
+    width:30%;
   } 
   
   #review_3{
-    width:70px;
+    width:40%px;
   }
   
   #quote2_parallax{
     position:absolute;
     z-index:-1;
     margin-left:15%;
-    
   }
   
   #quote_mark_2{
-   width: 30px;
-   height: 30px;
+   padding:30%;
   }
   
   #review_4{
-    width: 80px;
+    width: 10%;
   }
   
   #review_1_p,#review_2_p,#review_3_p,#review_4_p{
     font-size: 25px;
   } 
 
-#contact_section{
-position:relative;
-background-color: black;
-width: 1445px;
-height: 672px;
-margin-top: 15%;
-margin-bottom:-2%;
-}
-
-#contact_title{
-  position:absolute;
-  font-family: Baskerville;
-  color:white;
-  font-size:40px;
-  position:absolute;
-  margin-top: 5%;
-  margin-left:40%;
-}
-
-#first_name_input{
-  position:absolute;
-  background-color: black;
-  border: black;
-  border-bottom: 2px solid white;
-  color:white;
-  font-size:2rem;
-  margin-left:6%;
-  margin-top:10%;
-  width: 35%;
-  padding:20px;
-}
-
+  #review1_parallax{
+    position:absolute;
+    margin-left:0%;
+    margin-top:-60%;
+  }
+  
+  #review2_parallax{
+    margin-top:-40%;
+  }
+  
+  #review3_parallax{
+    margin-top:-70%;
+  }
+  
+  
+  #review4_parallax{
+    margin-top: -60%;
+  }
+  
 #contact_section{
   width: 440px;
   height: 680px;
@@ -661,3 +652,4 @@ margin-bottom:-2%;
   }
 
 };
+
