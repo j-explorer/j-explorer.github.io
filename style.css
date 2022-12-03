@@ -169,6 +169,7 @@ margin-top: 20%;
 }
 
 #traditional_p{
+  position: absolute;
   font-family:Baskerville;
   margin-top: 8%;
   margin-right:2%;
@@ -506,7 +507,7 @@ textarea:focus {
    height:80px;
    width: 80px;
    margin-left:8%;
-   margin-top: 20%;
+   margin-top: 40%;
   }
   
   #nav_bar{
@@ -573,21 +574,25 @@ textarea:focus {
     #custom_p{
       font-size: 35px;
       margin-top:5%;
-      margin-left:20%
+      margin-left:25%
     }
 
 
     #quote_mark_1{
-      width:100%;
+      width:140%;
      }
 
      #quote1_parallax{
-      margin-top:-100%;
+      margin-top:-120%;
      }
 
   #quote_mark_2{
    width:40%;
   }
+
+  #quote1_parallax{
+    margin-top:-100%;
+   }
   
   
   #review_1{
@@ -604,14 +609,14 @@ textarea:focus {
   
   #review_3{
     width:40%;
-    margin-top: -100%;
+    margin-top: -150%;
     margin-left: 5%;
   }
   
   #review_4{
     width:50%;
     margin-left: 25%;
-    margin-top: -120%;
+    margin-top: -200%;
   }
   
 
@@ -658,7 +663,7 @@ textarea:focus {
 
   #last_name_input{
     margin-top: 20%;
-    margin-left:3%;
+    margin-left:35%;
     width:40%;
   }
   
@@ -669,15 +674,18 @@ textarea:focus {
   }
   
   textarea{
-    margin-top:100%; 
+    margin-top:90%; 
     margin-left:3%;
-    width:50%;
+    width:85%;
   }
 
   #submit_button{
-    transform: rotate(90deg);
     margin-left:65%;
     margin-top:90%;
   }
 
+  #SEND{
+    transform:rotate(0deg);
+    font-size: 30px;
+  }
 };
