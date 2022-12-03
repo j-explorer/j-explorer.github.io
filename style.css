@@ -491,7 +491,11 @@ textarea:focus {
   }
 
   #beginning_quote{
-    margin-left:-5%
+    margin-left:-2%;
+  }
+
+  #ending_quote{
+    margin-left: -3%;
   }
     
   #beginning_quote::first-letter{
@@ -531,11 +535,60 @@ textarea:focus {
   .traditional_section, .ornamented_section{
     width:400px;
     margin-top:35%;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-top:20%;
   }
   
   #traditional_image, #ornamented_image{
+    margin-left:-5%;
+  }
+
+  #traditional_title, #ornamented_title{
+    font-size: 35px;
     margin-left:0%;
+    margin-top: 0%;
+  }
+  
+  #traditional_p, #ornamented_p{
+    font-size: 16px;
   }
  
+  #quote1_parallax{
+   margin-left:40%;
+   width: 25px;
+  }
+  
+  
+  #review_1{
+    width: 25px;
+  }
+  
+  #review_2{
+    width:30px;
+  } 
+  
+  #review_3{
+    width:30px;
+  }
+  
+  #quote2_parallax{
+    position:absolute;
+    z-index:-1;
+    margin-left:15%;
+    
+  }
+  
+  #quote_mark_2{
+    width: 20px;
+    width:450px;
+  }
+  
+  #review_4{
+    width: 40px;
+  }
+  
+  #review_1_p,#review_2_p,#review_3_p,#review_4_p{
+    font-size: 18px;
+  } 
+
 };
