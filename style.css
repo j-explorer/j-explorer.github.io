@@ -474,9 +474,7 @@ textarea:focus {
 
 @media screen and (min-width:320px) and (max-width:480px){
 
-@media screen and (min-width:320px) and (max-width:480px){
-
-  body{
+body{
     margin:0;
     padding:0;
     overflow-x:hidden;
@@ -493,11 +491,11 @@ textarea:focus {
   }
 
   #beginning_quote{
-    margin-left:4%;
+    margin-left:6%;
   }
 
   #ending_quote{
-    margin-left: 10%;
+    margin-left: 15%;
   }
     
   #beginning_quote::first-letter{
@@ -507,6 +505,7 @@ textarea:focus {
   #intro_images{
    height:80px;
    width: 80px;
+   margin-left: 8%;
   }
   
   #nav_bar{
@@ -530,12 +529,9 @@ textarea:focus {
   
   .traditional_section, .ornamented_section{
     width:400px;
+    height: 600px;
     margin-left: 1.5%;
     margin-top:20%;
-  }
-  
-  .traditional_section{
-  margin-top:25%;
   }
 
   #traditional_image{
@@ -543,49 +539,43 @@ textarea:focus {
   }
 
   #ornamented_image{
-    margin-left:-100%;
+    margin-left:-97%;
   }
 
   #traditional_title, #ornamented_title{
     font-size: 35px;
-    margin-left:0%;
+    margin-left:5%;
     margin-top: 35%;
     margin-left: 10%;
   }
   
   #traditional_p, #ornamented_p{
     font-size: 16px;
-    margin-top:30%;
+    margin-top:60%;
     line-height: 25px;
   }
  
   #custom_button{
     width: 300px;
     height: 70px;
-    margin-left:20%;
+    margin-left:15%;
     }
     
     #custom_p{
       font-size: 35px;
-      margin-top:-10%;
+      margin-top:-5%;
     }
-    
-    #quote_mark_1{
-      padding:15%;
-     }
 
 
      #quote1_parallax{
-      position:absolute;
-      z-index:-1;
-      margin-left:56.6%;
-      margin-top:-60%;
+      padding:15%;
      }
      
   
-  
   #review_1{
-    padding: 5%;
+    width:10%;
+    height:10%;
+    margin-left:-3%;
     margin-top:20%;
   }
   
@@ -635,8 +625,7 @@ textarea:focus {
   }
 
 #contact_section{
-  width: 440px;
-  height: 680px;
+  width: 100%;
   }
   
   #contact_title{
