@@ -225,7 +225,7 @@ margin-left: 2%;
   #main{
     width:70%;
     margin-left: -10%;
-    margin-top: 30%;
+    margin-top: 10%;
   }
 
  
@@ -250,7 +250,8 @@ margin-left: 2%;
 
   #book_genre{
     width:20%;
-    margin-left: 55%;
+    margin-left: 70%;
+    margin-top:0%;
   }
 
   #book_selection{
@@ -263,13 +264,18 @@ margin-left: 2%;
   }
 
   #book_pattern{
-    margin-left: 50%;
+    margin-left: 55%;
   }
 
 #payment_information{
-  width: 85%;
+  width: 90%;
   height: 300px;
   margin-left: 3%;
   margin-top:0%;
+}
+
+#checkout_button{
+  height:10%;
+  width: 25%;
 }
 }
