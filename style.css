@@ -474,7 +474,7 @@ textarea:focus {
 
 @media screen and (min-width:320px) and (max-width:480px){
 
-  body{
+ body{
     margin:0;
     padding:0;
     overflow-x:hidden;
@@ -491,11 +491,11 @@ textarea:focus {
   }
 
   #beginning_quote{
-    margin-left:-2%;
+    margin-left:0%;
   }
 
   #ending_quote{
-    margin-left: -3%;
+    margin-left: 0%;
   }
     
   #beginning_quote::first-letter{
@@ -503,14 +503,11 @@ textarea:focus {
   }
 
   #intro_images{
-   position:relative;
-   display:flex;
-   justify-content: space-between;
    margin-left: 4%;
    margin-right: 4%;
    margin-top: 4%;
-   height:40px;
-   width: 40px;
+   height:50px;
+   width: 50px;
   }
   
   #nav_bar{
@@ -535,40 +532,47 @@ textarea:focus {
   .traditional_section, .ornamented_section{
     width:400px;
     margin-top:35%;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top:20%;
   }
   
-  #traditional_image, #ornamented_image{
-    margin-left:-5%;
+  #traditional_image{
+    margin-left:-3%;
+  }
+
+  #ornamented_image{
+    margin-left:-30%;
   }
 
   #traditional_title, #ornamented_title{
     font-size: 35px;
     margin-left:0%;
-    margin-top: 0%;
+    margin-top: 35%;
+    margin-left: 10%;
   }
   
   #traditional_p, #ornamented_p{
     font-size: 16px;
+    margin-top:15%;
   }
  
   #quote1_parallax{
    margin-left:40%;
-   width: 25px;
+   width: 30px;
+   height: 30px;
   }
   
   
   #review_1{
-    width: 25px;
+    width: 60px;
   }
   
   #review_2{
-    width:30px;
+    width:70px;
   } 
   
   #review_3{
-    width:30px;
+    width:70px;
   }
   
   #quote2_parallax{
@@ -579,16 +583,81 @@ textarea:focus {
   }
   
   #quote_mark_2{
-    width: 20px;
-    width:450px;
+   width: 30px;
+   height: 30px;
   }
   
   #review_4{
-    width: 40px;
+    width: 80px;
   }
   
   #review_1_p,#review_2_p,#review_3_p,#review_4_p{
-    font-size: 18px;
+    font-size: 25px;
   } 
+
+#contact_section{
+position:relative;
+background-color: black;
+width: 1445px;
+height: 672px;
+margin-top: 15%;
+margin-bottom:-2%;
+}
+
+#contact_title{
+  position:absolute;
+  font-family: Baskerville;
+  color:white;
+  font-size:40px;
+  position:absolute;
+  margin-top: 5%;
+  margin-left:40%;
+}
+
+#first_name_input{
+  position:absolute;
+  background-color: black;
+  border: black;
+  border-bottom: 2px solid white;
+  color:white;
+  font-size:2rem;
+  margin-left:6%;
+  margin-top:10%;
+  width: 35%;
+  padding:20px;
+}
+
+#contact_section{
+  width: 440px;
+  height: 680px;
+  }
+  
+  #contact_title{
+    margin-left:20%;
+  }
+  
+  #first_name_input{
+    margin-left:0%;
+    width: 10%;
+  }
+
+  #last_name_input{
+    width:10%;
+  }
+  
+  #email_input{
+    margin-left:0%;
+    width: 25%; 
+  }
+  
+  textarea{
+    margin-top:25%; 
+    margin-left:0%;
+    width:25%;
+  }
+
+  #submit_button{
+    margin-left:30%;
+  }
 
 };
