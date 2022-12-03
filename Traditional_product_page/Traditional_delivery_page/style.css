@@ -201,6 +201,11 @@ margin-left: 2%;
 
  @media screen and (min-width:320px) and (max-width:480px){
 
+body{
+    display: flex;
+    flex-direction: column;
+  }
+  
  #contact_info_title, #delivery_address_title{
   font-size: 25px;
   margin-left: 15%;
@@ -208,32 +213,39 @@ margin-left: 2%;
 
 #phone_number, #email{
   padding: 15px;
-  width: 60%;
+  width: 90%;
 } 
 
 #first_name, #last_name{
   padding: 15px;
-  width: 30%;
+  width: 40%;
 }
 
 #address{
   padding: 15px;
-  width: 60%;
+  width: 90%;
 }
 
 #town_city{
   padding: 15px;
-  width: 30%;
+  width: 50%;
 }
 
 #postcode{
   padding: 15px;
-  width: 10%;
+  width: 30%;
 }
 
 #uk{
   padding: 15px;
-  width: 6.3%
+  width: 10%
 }
+
+#continue_button{
+  width: 40%;
+  margin-top: 20%;
+}
+
+
  }
 
