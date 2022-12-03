@@ -495,7 +495,7 @@ textarea:focus {
   }
 
   #ending_quote{
-    margin-left:20%;
+    margin-left:25%;
   }
     
   #beginning_quote::first-letter{
@@ -505,7 +505,7 @@ textarea:focus {
   #intro_images{
    height:80px;
    width: 80px;
-   margin-left: 5%;
+   margin-left:8%;
   }
   
   #nav_bar{
@@ -531,7 +531,7 @@ textarea:focus {
     width:400px;
     height: 600px;
     margin-left: 1.5%;
-    margin-top:20%;
+    margin-top:40%;
   }
 
   #traditional_image{
@@ -545,15 +545,19 @@ textarea:focus {
   #traditional_title, #ornamented_title{
     font-size: 35px;
     margin-left:5%;
-    margin-top: 35%;
-    margin-left: 10%;
+    margin-top: 15%;
+    margin-left: 15%;
   }
   
   #traditional_p, #ornamented_p{
     font-size: 16px;
-    margin-top:80%;
-    line-height: 25px;
+    margin-top:90%;
+    line-height: 6%;
     text-align: center;
+  }
+
+  #ornamented_p{
+    margin-top: 120%;
   }
  
   #custom_button{
@@ -564,8 +568,8 @@ textarea:focus {
     
     #custom_p{
       font-size: 35px;
-      margin-top:-1%;
-      margin-left:0%
+      margin-top:3%;
+      margin-left:10%
     }
 
 
@@ -577,21 +581,22 @@ textarea:focus {
   #review_1{
     width:40%;
     margin-left:-3%;
-    margin-top:20%;
+    margin-top:30%;
   }
   
   #review_2{
-    padding:10%;
+    width:40%;
   } 
   
   #review_3{
-    padding:8%;
+    width:40%;
   }
   
   #quote2_parallax{
     position:absolute;
     z-index:-1;
     margin-left:15%;
+    width:30%;
   }
   
   #quote_mark_2{
@@ -599,7 +604,7 @@ textarea:focus {
   }
   
   #review_4{
-    width: 10%;
+    width:40%;
   }
   
   #review_1_p,#review_2_p,#review_3_p,#review_4_p{
@@ -630,7 +635,7 @@ textarea:focus {
   }
   
   #contact_title{
-    margin-left:20%;
+    margin-left:25%;
   }
   
   #first_name_input{
@@ -644,6 +649,7 @@ textarea:focus {
   
   #email_input{
     margin-left:0%;
+    margin-top: 25%;
     width: 25%; 
   }
   
