@@ -230,7 +230,7 @@ margin-left: 2%;
 
  
   .optional_images{
-    flex-direction: row;
+    display: inline-block;
     width: 5%;
     opacity:0.7;
   }
@@ -251,7 +251,7 @@ margin-left: 2%;
   #book_genre{
     width:20%;
     margin-left: 70%;
-    margin-top:0%;
+    margin-top:-40%;
   }
 
   #book_selection{
@@ -268,14 +268,14 @@ margin-left: 2%;
   }
 
 #payment_information{
-  width: 90%;
+  width: 95%;
   height: 300px;
   margin-left: 3%;
   margin-top:0%;
 }
 
 #checkout_button{
-  height:10%;
-  width: 25%;
+  height:15%;
+  width: 37%;
 }
 }
