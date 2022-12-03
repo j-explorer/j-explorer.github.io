@@ -521,6 +521,7 @@ textarea:focus {
 
   .about_section{
     font-size: 25px;
+    margin-top: 30%;
     }
 
     #italic{
@@ -543,7 +544,7 @@ textarea:focus {
   }
 
   #traditional_title, #ornamented_title{
-    font-size: 35px;
+    font-size: 20px;
     margin-left:5%;
     margin-top: 15%;
     margin-left: 15%;
@@ -552,7 +553,7 @@ textarea:focus {
   #traditional_p, #ornamented_p{
     font-size: 16px;
     margin-top:90%;
-    line-height: 6%;
+    line-height: 15%;
     text-align: center;
   }
 
@@ -564,38 +565,41 @@ textarea:focus {
     width: 300px;
     height: 70px;
     margin-left:13%;
+    margin-top: 20%;
     }
     
     #custom_p{
       font-size: 35px;
-      margin-top:3%;
-      margin-left:10%
+      margin-top:5%;
+      margin-left:40%
     }
 
 
-     #quote1_parallax{
+    #quote_mark_1{
       width:20%;
+
      }
      
   
   #review_1{
     width:40%;
     margin-left:-3%;
-    margin-top:30%;
+    margin-top:80%;
   }
   
   #review_2{
-    width:40%;
+    width:50%;
+    margin-top:15%;
+    margin-left: 59%;
   } 
   
   #review_3{
     width:40%;
+    margin-top: -30%;
+    margin-left: 5%;
   }
   
   #quote2_parallax{
-    position:absolute;
-    z-index:-1;
-    margin-left:15%;
     width:30%;
   }
   
@@ -604,7 +608,9 @@ textarea:focus {
   }
   
   #review_4{
-    width:40%;
+    width:50%;
+    margin-left: 25%;
+    margin-top: -10%;
   }
   
   #review_1_p,#review_2_p,#review_3_p,#review_4_p{
@@ -654,13 +660,14 @@ textarea:focus {
   }
   
   textarea{
-    margin-top:30%; 
+    margin-top:50%; 
     margin-left:0%;
     width:30%;
   }
 
   #submit_button{
     margin-left:35%;
+    margin-top:50%;
   }
 
 };
