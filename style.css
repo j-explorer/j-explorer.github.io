@@ -474,6 +474,8 @@ textarea:focus {
 
 @media screen and (min-width:320px) and (max-width:480px){
 
+@media screen and (min-width:320px) and (max-width:480px){
+
   body{
     margin:0;
     padding:0;
@@ -491,11 +493,11 @@ textarea:focus {
   }
 
   #beginning_quote{
-    margin-left:2%;
+    margin-left:4%;
   }
 
   #ending_quote{
-    margin-left: 5%;
+    margin-left: 10%;
   }
     
   #beginning_quote::first-letter{
@@ -503,8 +505,8 @@ textarea:focus {
   }
 
   #intro_images{
-   height:100px;
-   width: 100px;
+   height:80px;
+   width: 80px;
   }
   
   #nav_bar{
@@ -528,17 +530,20 @@ textarea:focus {
   
   .traditional_section, .ornamented_section{
     width:400px;
-    margin-top:0%;
-    margin-left: 1%;
+    margin-left: 1.5%;
     margin-top:20%;
   }
   
+  .traditional_section{
+  margin-top:25%;
+  }
+
   #traditional_image{
-    margin-left:-1%;
+    margin-left:0%;
   }
 
   #ornamented_image{
-    margin-left:-80%;
+    margin-left:-100%;
   }
 
   #traditional_title, #ornamented_title{
@@ -550,35 +555,46 @@ textarea:focus {
   
   #traditional_p, #ornamented_p{
     font-size: 16px;
-    margin-top:15%;
+    margin-top:30%;
+    line-height: 25px;
   }
  
   #custom_button{
     width: 300px;
     height: 70px;
+    margin-left:20%;
     }
     
     #custom_p{
       font-size: 35px;
+      margin-top:-10%;
     }
     
-  #quote1_parallax{
-   margin-left:40%;
-   width: 30px;
-   height: 30px;
-  }
+    #quote_mark_1{
+      padding:15%;
+     }
+
+
+     #quote1_parallax{
+      position:absolute;
+      z-index:-1;
+      margin-left:56.6%;
+      margin-top:-60%;
+     }
+     
   
   
   #review_1{
-    padding: 20%;
+    padding: 5%;
+    margin-top:20%;
   }
   
   #review_2{
-    width:30%;
+    padding:10%;
   } 
   
   #review_3{
-    width:40%px;
+    padding:8%;
   }
   
   #quote2_parallax{
@@ -588,7 +604,7 @@ textarea:focus {
   }
   
   #quote_mark_2{
-   padding:30%;
+   padding:10%;
   }
   
   #review_4{
@@ -617,7 +633,7 @@ textarea:focus {
   #review4_parallax{
     margin-top: -60%;
   }
-  
+
 #contact_section{
   width: 440px;
   height: 680px;
@@ -642,14 +658,13 @@ textarea:focus {
   }
   
   textarea{
-    margin-top:25%; 
+    margin-top:30%; 
     margin-left:0%;
-    width:25%;
+    width:30%;
   }
 
   #submit_button{
-    margin-left:30%;
+    margin-left:35%;
   }
 
 };
-
