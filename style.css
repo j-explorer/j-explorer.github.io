@@ -540,13 +540,8 @@ textarea:focus {
     }
   
 
-  #traditional_image{
-    width: 60%;
-    margin-left:20%;
-    margin-right: 20%;
-  }
-
-  #ornamented_image{
+  #traditional_image, #ornamented_image{
+    position: relative;
     width: 60%;
     margin-left:20%;
     margin-right: 20%;
@@ -554,9 +549,8 @@ textarea:focus {
 
   #traditional_title, #ornamented_title{
     font-size: 20px;
-    margin-left:5%;
-    margin-top: 0%;
-    margin-left: 15%;
+    margin-left:0%;
+    margin-top: -10%;
   }
   
   #ornamented_title{
@@ -565,19 +559,19 @@ textarea:focus {
 
   #traditional_p, #ornamented_p{
     font-size: 16px;
-    margin-top:100%;
+    margin-top:95%;
     line-height: 1.3rem;
     text-align: center;
   }
 
   #ornamented_p{
-    margin-top: 120%;
+    margin-top: 130%;
   }
 
     #custom_button{
-    width: 30%;
+    width: 50%;
     height: 70px;
-    margin-left:14%;
+    margin-left:50%;
     margin-top: 20%;
     }
     
@@ -629,10 +623,6 @@ textarea:focus {
     margin-top: -200%;
   }
   
-
-  
- 
-  
   
   #review_1_p,#review_2_p,#review_3_p,#review_4_p{
     font-size: 25px;
@@ -657,20 +647,27 @@ textarea:focus {
     margin-top: -60%;
   }
 
-
+  #email_input{
+    margin-left:3%;
+    margin-top: 60%;
+  }
   
   textarea{
-    margin-top:90%; 
+    margin-top:95%; 
     width:85%;
+    margin-left:3%;
   }
 
   #submit_button{
-    margin-top:90%;
+    margin-top:100%;
+    margin-left: 15%
   }
   
 
   #SEND{
+    transform:rotate(180deg);
     font-size: 30px;
   }
 };
+
 
