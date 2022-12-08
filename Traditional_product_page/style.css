@@ -119,7 +119,7 @@ flex-direction: row;
 }
 
 #item_total{
-  margin-left:3%;
+  margin-left:10%;
 }
 
 #item_total_gbp,#actual_amounts{
@@ -130,13 +130,13 @@ height:40px;
 }
 
 #item_total_gbp{
-margin-left: 60%;
+margin-left: 50%;
 }
 
 #actual_amounts{
   width: 40px;
-  margin-top:-3px;
-  margin-left: 12px;
+  margin-top:-4%;
+  margin-left: 5%;
 }
 
 #actual_item_amount,#actual_size_amount{
@@ -152,24 +152,25 @@ margin-left: 60%;
  }
 
  #shipping{
-  margin-left:3%;
+  margin-left:35%;
  }
 
  #shipping_location{
   font-size: 15px;
-  margin-left: -10%;
+  width:100%;
+  margin-left: 20%;
   margin-top:-10%;
  }
 
  #shipping_gbp{
   display:flex;
   flex-direction: row;
-  margin-left: 62%;
+  margin-left: 58.5%;
  }
 
  #shipping_amount{
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 15%;
   margin-top: 27%;
  }
 
@@ -188,18 +189,18 @@ margin-left: 2%;
  }
 
 #total{
- margin-left:3%;
+ margin-left:10%;
  }
 
  #total_gbp{
   display: flex;
   flex-direction: row;
-  margin-left: 72%;
+  margin-left: 62%;
  }
 
  #total_amount{
   font-size: 20px;
-  margin-left: 10px;
+  margin-left: 10%;
   margin-top: 27%;
  }
 
@@ -247,10 +248,15 @@ margin-left: 2%;
     display: inline-flex;
     opacity:0.7;
     margin-top: 15%; 
+    margin-left:3%;
   }
 
   #option1, #option2, #option3, #option4{
-   width: 24%;
+   width: 20%;
+  }
+
+  #option2, #option3{
+    height: 25%;
   }
 
   #right_section{
@@ -258,32 +264,34 @@ margin-left: 2%;
   }
 
   #title{
-    width: 85%;
-    margin-left: 3%;
+    width: 75%;
+    margin-left: 14%;
     padding: 15px;
   }
   
   #author{
-    width: 60%;
-    margin-left: 3%;
+    width: 55%;
+    margin-left: 14%;
     margin-top:-40%;
     padding: 15px;
   }
 
   #book_genre{
-    width:13%;
-    margin-left: 75%;
+    width:10%;
+    margin-left: 79%;
     margin-top:-40%;
     padding: 15px;
   }
 
   #book_selection{
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-left: 14%;
+
   }
   
   #book_size, #book_pattern{
     margin-left: 3%;
-    padding: 15px;
+    
   }
 
   #book_pattern{
@@ -298,10 +306,42 @@ margin-left: 2%;
   margin-top:-10%;
 }
 
+#item_total{
+  margin-left:8%;
+}
+
+#item_total_gbp{
+margin-left:42%;
+}
+
+#shipping_gbp{
+margin-left:48%;
+}
+
+#total_gbp{
+  margin-left: 59%;
+}
+
+#shipping{
+margin-left: 18%;
+}
+
+#shipping_location{
+  margin-left:0%;
+}
+
 #checkout_button{
   height:15%;
   width: 37%;
   margin-left: 30%;
+}
+
+#disclaimer{
+  margin-top:10%;
+  margin-left:auto;
+  margin-right:auto;
+  width:85%;
+  text-align: center;
 }
 }
 
