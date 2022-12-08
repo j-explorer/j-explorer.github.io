@@ -1,5 +1,4 @@
 
-
 .pointer{ 
   cursor: pointer;
 }
@@ -130,7 +129,7 @@ height:40px;
 }
 
 #item_total_gbp{
-margin-left: 55%;
+  margin-left:46%;
 }
 
 #actual_amounts{
@@ -164,7 +163,7 @@ margin-left: 55%;
  #shipping_gbp{
   display:flex;
   flex-direction: row;
-  margin-left: 56.5%;
+  margin-left:48%;
  }
 
  #shipping_amount{
@@ -186,8 +185,13 @@ margin-left: 2%;
   margin-top:3%;
  }
 
+ #item_total{
+  margin-left:4%;
+}
+
 #total{
- margin-left:3%;
+ margin-top:-3%;
+ margin-left:7%;
  }
 
  #total_gbp{
@@ -211,52 +215,62 @@ margin-left: 2%;
 
  #contact_info_title, #delivery_address_title{
   font-size: 25px;
-  margin-left: 15%;
+  text-align:center;
+  margin: 10% auto;
 }
 
 #phone_number, #email{
   padding: 15px;
   width: 85%;
   margin-left: 3%;
+  margin-bottom: 5%;
 } 
 
 #delivery_address{
-  margin-top:15%;
+  margin:15% auto;
 }
 
 #first_name, #last_name{
   padding: 15px;
   width: 85%;
   margin-left: 3%;
+  margin-bottom: 5%;
 }
 
 #address{
   padding: 15px;
   width: 85%;
   margin-left: 3%;
+  margin-bottom: 5%;
 }
 
 #town_city{
   padding: 15px;
-  width: 50%;
+  width: 40%;
+  margin-bottom: 5%;
+  margin-left:2%;
 }
 
 #postcode{
   padding: 15px;
   width: 30%;
+  margin-bottom: 5%;
+  margin-left: 6%;
 }
 
 #uk{
   padding: 15px;
-  width: 10%
+  width: 10%;
+  margin-bottom: 5%;
+  margin-left:2%;
 }
 
 #continue_button{
   width: 40%;
   margin-bottom:0%;
   margin-top: 15%;
-  margin-left:3%;
-  margin-right:3%;
+  margin-left:10%;
+  
 }
 
 #right_section{
@@ -266,5 +280,8 @@ margin-left: 2%;
   height:80%;
  }
 
+ #payment_information{
+  height: 35%;
  }
 
+ }
