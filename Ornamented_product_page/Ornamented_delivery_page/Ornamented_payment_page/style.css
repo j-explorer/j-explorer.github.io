@@ -6,7 +6,6 @@
   background-color: white;
   border: 1px solid grey;
   width:50%;
-  height:150px;
   margin-left: 5%;
   margin-top: 8%;
   
@@ -18,7 +17,7 @@
   margin-left: 5px;
 }
 #contact_info_title{
-  margin-top:-0.5px;
+  margin-top:1rem;
 }
 
 #delivery_address_title{
@@ -31,7 +30,8 @@
 
 #payment_method{
   display:flex;
-  flex-direction: column;;
+  flex-direction: column;
+   width:94%;
   margin-top: 5%;
   margin-left: 5%;
   font-family: arial;
@@ -46,25 +46,28 @@ label{
 #right_section{
   position:absolute;
   background-color: rgba(32, 6, 48, 0.73);
-  height:1000px;
-  width:530px;
+  height:130%;
+  width:36.5%;
   margin-left: 60%;
+  margin-right: 40%;
   margin-top:-42%;
  }
  
  
  #chosen_book{
    background-color: black;
-   height: 400px;
-   width: 400px;
+   height: 40%;
+   width: 75%;
    margin-left: 12%;
-   margin-top: 35%;
+   margin-top: 30%;
  } 
  
  #image{
   position:absolute;
   color:white;
   font-size: 80px;
+  font-family: arial;
+  font-size: 500%;
   font-family: arial;
   margin-left: 15%;
   margin-top: 25%;
@@ -103,7 +106,7 @@ label{
  }
  
  #item_total_gbp{
- margin-left: 55%;
+ margin-left: 46%;
  }
  
  #actual_amounts{
@@ -137,7 +140,7 @@ label{
   #shipping_gbp{
    display:flex;
    flex-direction: row;
-   margin-left: 56.5%;
+   margin-left: 48%;
   }
  
   #shipping_amount{
@@ -159,18 +162,67 @@ label{
    margin-top:3%;
   }
  
- #total{
-  margin-left:3%;
-  }
- 
+ #item_total{
+  margin-left:4%;
+}
+
+#total{
+ margin-left:3%;
+ }
+
   #total_gbp{
    display: flex;
    flex-direction: row;
-   margin-left: 70%;
+   margin-left: 62%;
   }
  
   #total_amount{
    font-size: 20px;
    margin-left: 10px;
    margin-top: 27%;
+  }
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+ body{
+  display:block;
+  margin:0;
+ }
+
+  #delivery_address_summary{
+    width:95%;
+    margin-left:3%;
+    margin-right:3%;
+  }
+   
+    #right_section{
+      margin-left:0%;
+      margin-top:20%;
+      width: 100%;
+      height:80%;
+     }
+
+     #chosen_book{
+      margin-top:10%;
+     }
+
+
+    #payment_method{
+      width:170%;
+      margin-left: 3%;
+    } 
+    
+    #payment_information{
+    margin: 10% auto;
+    height:35%;
+    } 
+
+    #total{
+      margin-top:-4%;
+      }
+
+    #total_gbp{
+      margin-left: 66%;
+     }
+
   }
