@@ -50,17 +50,30 @@ window.addEventListener('scroll', function() {
 
 
 //"Thank you" after sending message in contact section
-const form= document.getElementById('contact_section');
-const button= document.getElementById('submit');
-const hide = document.getElementById('hide');
-const unhide = document.getElementById('unhide');
+const title= document.getElementById('contact_title');
+const inputs= document.getElementById('inputs');
+const button = document.getElementById('submit_button');
 
 addEventListener('submit', (event) => {
-  hide.style.display = 'none';
-  unhide.style.visibility ='visible';
+  title.innerHTML = 'none';
+  inputs.style.display = 'none';
+  button.style.display = 'none';
 }
 );
 
+//change button when max-width=480px
+
+const SEND= document.getElementById('hzt_SEND');
+const mediaQuery = '(max-width: 480px)';
+const mediaQueryList = window.matchMedia(mediaQuery);
+
+mediaQueryList.addEventListener('change', event => {
+  if (event.matches) {
+    SEND.innerHTML = 'SEND';
+  } else {
+    console.log('The window is now over 700px');
+  }
+})
 
 
 
