@@ -50,6 +50,9 @@ window.addEventListener('scroll', function() {
 
 
 //"Thank you" after sending message in contact section
+
+/* not working
+
 const title= document.getElementById('contact_title');
 const inputs= document.getElementById('inputs');
 const button = document.getElementById('submit_button');
@@ -74,7 +77,7 @@ mediaQueryList.addEventListener('change', event => {
     console.log('The window is now over 700px');
   }
 })
-
+*/
 
 
 
